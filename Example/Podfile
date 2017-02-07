@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NRSPieChart_Example' do
+  pod 'NRSPieChart', :path => '../'
+
+  target 'NRSPieChart_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
