@@ -338,7 +338,7 @@ public class NRSPieChartView: UIView {
         dataSource?.pieChartDidFinishRendering?(self)
     }
     
-    func centerPointFor(_ majorSlice: UInt) -> CGPoint {
+    public func centerPointFor(_ majorSlice: UInt) -> CGPoint {
         guard majorSlice < dataSource?.numberOfMajorSlicesInPieChartView(self) ?? 0 else {
             return CGPoint(x: 0, y: 0)
         }

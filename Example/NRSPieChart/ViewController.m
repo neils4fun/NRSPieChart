@@ -11,29 +11,31 @@
 #import "NRSPieChart-Swift.h"
 
 @interface BeginEnd: NSObject
-
-@property (assign) NSUInteger         begin;
-@property (assign) NSUInteger         end;
-
+    
+    @property (assign) NSUInteger         begin;
+    @property (assign) NSUInteger         end;
+    
 @end
 
 @implementation BeginEnd
-
+    
 @end
 
 @interface ViewController () <
     NRSPieChartViewDelegateProtocol,
     NRSPieChartViewDataSourceProtocol
 >
-
-@property (weak) IBOutlet NRSPieChartView          *pieChartView;
-
-@property (assign) NSUInteger                   numberOfMajorSlices;
-@property (assign) NSUInteger                   numberOfMinorSlices;
-
-@property (strong) NSMutableArray               *beginEndPoints;
-@property (strong) NSMutableArray               *colors;
-
+    
+    @property (weak) IBOutlet NRSPieChartView          *pieChartView;
+    
+    @property (assign) NSUInteger                   numberOfMajorSlices;
+    @property (assign) NSUInteger                   numberOfMinorSlices;
+    
+    @property (strong) NSMutableArray               *beginEndPoints;
+    @property (strong) NSMutableArray               *colors;
+    
+    @property (strong) NRSPieChartViewSliceIndex    *selectedSlice;
+    
 @end
 
 @implementation ViewController
@@ -73,16 +75,31 @@
 
 
 - (NRSPieChartViewEndPoints *) pieChartEndPointsForSlice:(NRSPieChartView *)pieChartView sliceIndex:(NRSPieChartViewSliceIndex * _Nonnull)sliceIndex {
-    NSLog(@"Get end points for major: %ld minor: %ld", sliceIndex.major, sliceIndex.minor);
+//    NSLog(@"Get end points for major: %ld minor: %ld", sliceIndex.major, sliceIndex.minor);
     BeginEnd *point = [self.beginEndPoints objectAtIndex:sliceIndex.major];
 
     
     return [[NRSPieChartViewEndPoints alloc] initWithStart:(point.begin + 0.05)  end:(point.end - 0.05)];
 }
+    
+- (BOOL)pieChartShouldHighlightSlice:(NRSPieChartView *)pieChartView sliceIndex:(NRSPieChartViewSliceIndex *)sliceIndex {
+    if (self.selectedSlice && sliceIndex.major == self.selectedSlice.major) {
+        return YES;
+    }
+    return NO;
+}
 
 #pragma mark - PieChartViewDelegate
 
-
+- (void)pieChartDidSingleTapSlice:(NRSPieChartView *)pieChartView sliceIndex:(NRSPieChartViewSliceIndex *)sliceIndex {
+    NSLog(@"Select slice %ld/%ld", sliceIndex.major, sliceIndex.minor);
+    self.selectedSlice = sliceIndex;
+    [pieChartView refreshSlices];
+}
+    
+    
+#pragma mark - Manage Pie Chart model
+    
 - (void)computeNumberOfSlices {
     self.numberOfMajorSlices = arc4random_uniform(20) % (20 - 5 + 1) + 5;
     self.numberOfMinorSlices = 1;//(NSUInteger)arc4random_uniform(5);
@@ -137,6 +154,7 @@
 }
 
 - (IBAction)refreshSlices:(id)sender {
+    self.selectedSlice = nil;
     [self computeNumberOfSlices];
     self.pieChartView.shouldAnimate = YES;
     [self.pieChartView refreshSlices];
