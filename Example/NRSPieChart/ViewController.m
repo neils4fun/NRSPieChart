@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-#import "PieChartTest-Swift.h"
+#import "NRSPieChart-Swift.h"
 
 @interface BeginEnd: NSObject
 
@@ -22,11 +22,11 @@
 @end
 
 @interface ViewController () <
-    PieChartViewDelegateProtocol,
-    PieChartViewDataSourceProtocol
+    NRSPieChartViewDelegateProtocol,
+    NRSPieChartViewDataSourceProtocol
 >
 
-@property (weak) IBOutlet PieChartView          *pieChartView;
+@property (weak) IBOutlet NRSPieChartView          *pieChartView;
 
 @property (assign) NSUInteger                   numberOfMajorSlices;
 @property (assign) NSUInteger                   numberOfMinorSlices;
@@ -58,26 +58,26 @@
 
 #pragma mark - PieChartViewDataSource
 
-- (NSUInteger) numberOfMajorSlicesInPieChartView:(PieChartView *)pieCharView {
+- (NSUInteger) numberOfMajorSlicesInPieChartView:(NRSPieChartView *)pieCharView {
     return self.numberOfMajorSlices;
 }
 
-- (NSUInteger) numberOfMinorSlicesInPieChartView:(PieChartView *)pieCharView forMajorSlice:(NSUInteger)majorSlice {
+- (NSUInteger) numberOfMinorSlicesInPieChartView:(NRSPieChartView *)pieCharView forMajorSlice:(NSUInteger)majorSlice {
     return self.numberOfMinorSlices;
 }
 
-- (CGColorRef) pieChartColorForSlice:(PieChartView *)pieChartView sliceIndex:(PieChartViewSliceIndex * _Nonnull)sliceIndex {
+- (CGColorRef) pieChartColorForSlice:(NRSPieChartView *)pieChartView sliceIndex:(NRSPieChartViewSliceIndex * _Nonnull)sliceIndex {
     
     return [[self.colors objectAtIndex:sliceIndex.major] CGColor];
 }
 
 
-- (PieChartViewEndPoints *) pieChartEndPointsForSlice:(PieChartView *)pieChartView sliceIndex:(PieChartViewSliceIndex * _Nonnull)sliceIndex {
+- (NRSPieChartViewEndPoints *) pieChartEndPointsForSlice:(NRSPieChartView *)pieChartView sliceIndex:(NRSPieChartViewSliceIndex * _Nonnull)sliceIndex {
     NSLog(@"Get end points for major: %ld minor: %ld", sliceIndex.major, sliceIndex.minor);
     BeginEnd *point = [self.beginEndPoints objectAtIndex:sliceIndex.major];
 
     
-    return [[PieChartViewEndPoints alloc] initWithStart:(point.begin + 0.05)  end:(point.end - 0.05)];
+    return [[NRSPieChartViewEndPoints alloc] initWithStart:(point.begin + 0.05)  end:(point.end - 0.05)];
 }
 
 #pragma mark - PieChartViewDelegate

@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B9A17FC21EB1F4592F62B72130D53DD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDCD6B987DC2105FC1836BD10EC8C04 /* ReplaceMe.swift */; };
-		0C506CC46BD9290F14FBBADE408E16CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		2421BF91EAB2E52410C28EDBB4835C6C /* NRSPieChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE8E28845ADFCC1B8BAD41C41A020B98 /* NRSPieChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02C5B578817F88000C6EE1AAB4B1C094 /* NRSPieChartViewSliceIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB990B55F0FF5DD877A84771F759790F /* NRSPieChartViewSliceIndex.swift */; };
+		0626446D07D8115C0A1B19A347CB604D /* NRSPieChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE8E28845ADFCC1B8BAD41C41A020B98 /* NRSPieChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DC4C554D5D7B3B3EAD1F80D21A15783 /* NRSPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB8FF7550A889459ECA1779415DDB3C /* NRSPieChartView.swift */; };
+		28ED10D94D83CA9C1E579708E8F25060 /* NRSPieChartViewEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404BF6E9FDD49ADD2CE46C1189FD92CA /* NRSPieChartViewEndPoints.swift */; };
 		345F4A18942CD58E3E64247C914F6B05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		512884D756CC4322A85E31460C0EC3D5 /* Pods-NRSPieChart_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19E9984EE3FB760D6152ED72DA1A5554 /* Pods-NRSPieChart_Example-dummy.m */; };
 		636381EC3D9026A831445C5BE6423A5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		7203A701C5CC93EFA88A3CED71509DAF /* Pods-NRSPieChart_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF78E6A9A361E41E3F600C6EDCC09AA7 /* Pods-NRSPieChart_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0C3341500CC5D163E93D1F3C36F88F3 /* Pods-NRSPieChart_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 590C7F0591650F2369A4A4F482C1DEB9 /* Pods-NRSPieChart_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2C994F48F026CD92B32D28A822C858C /* NRSPieChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2DB5F97B2B1BC48F2B615FD9BEEA2A /* NRSPieChart-dummy.m */; };
 		AC636256DF6D07852A39E3128DF24475 /* Pods-NRSPieChart_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA44A43B4BD97CDA2911790903DFA51 /* Pods-NRSPieChart_Tests-dummy.m */; };
-		AEF67A2D421C96BA9F893723934E7C49 /* NRSPieChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2DB5F97B2B1BC48F2B615FD9BEEA2A /* NRSPieChart-dummy.m */; };
+		D6E98B48AE3C78C7E193146B26946D5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +26,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2AD409103D0DF62DA51129F11FD813FA;
+			remoteGlobalIDString = C3780327669DAF7C856597F486FF2A6E;
 			remoteInfo = NRSPieChart;
 		};
 /* End PBXContainerItemProxy section */
@@ -37,27 +39,29 @@
 		26FEFEFD140B1A60A75A416A2C087997 /* NRSPieChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NRSPieChart-prefix.pch"; sourceTree = "<group>"; };
 		2F2B9370CD1F7DD0B3203B2391126C1A /* Pods-NRSPieChart_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NRSPieChart_Tests-resources.sh"; sourceTree = "<group>"; };
 		3EA44A43B4BD97CDA2911790903DFA51 /* Pods-NRSPieChart_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NRSPieChart_Tests-dummy.m"; sourceTree = "<group>"; };
+		404BF6E9FDD49ADD2CE46C1189FD92CA /* NRSPieChartViewEndPoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NRSPieChartViewEndPoints.swift; sourceTree = "<group>"; };
 		4A7914E574AF50AFEFB6D47937709CB6 /* Pods-NRSPieChart_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NRSPieChart_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4CDCD6B987DC2105FC1836BD10EC8C04 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
-		4F2721C67112F752E86DB2B9716686ED /* NRSPieChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NRSPieChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F2721C67112F752E86DB2B9716686ED /* NRSPieChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NRSPieChart.framework; path = NRSPieChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5529FAA094A47F6D5B393DE127951D8A /* Pods-NRSPieChart_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NRSPieChart_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		590C7F0591650F2369A4A4F482C1DEB9 /* Pods-NRSPieChart_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NRSPieChart_Example-umbrella.h"; sourceTree = "<group>"; };
 		811216B271A2F905829C930A83419D02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83F358CBED148B89EB8431284590FD1B /* Pods-NRSPieChart_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NRSPieChart_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		864A8FEE81B47CAC4ED305ED25671B0C /* Pods-NRSPieChart_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NRSPieChart_Tests.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		864A8FEE81B47CAC4ED305ED25671B0C /* Pods-NRSPieChart_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NRSPieChart_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A6D23AA234CBC218E2A4ADD54C9B092 /* Pods-NRSPieChart_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NRSPieChart_Example-resources.sh"; sourceTree = "<group>"; };
 		A9DF7D9050033842BCDC6DDC8FADD8D1 /* Pods-NRSPieChart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NRSPieChart_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B4B136136340E651A1FCBE7F2CAA814D /* Pods-NRSPieChart_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NRSPieChart_Example.modulemap"; sourceTree = "<group>"; };
+		AAB8FF7550A889459ECA1779415DDB3C /* NRSPieChartView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NRSPieChartView.swift; sourceTree = "<group>"; };
+		B4B136136340E651A1FCBE7F2CAA814D /* Pods-NRSPieChart_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NRSPieChart_Example.modulemap"; sourceTree = "<group>"; };
 		B65A7D8D9E6328985EC7DE08CFF80B87 /* Pods-NRSPieChart_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NRSPieChart_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BF27B552CA67F43D5DD4C2FFAE8D90D1 /* Pods-NRSPieChart_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NRSPieChart_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BF78E6A9A361E41E3F600C6EDCC09AA7 /* Pods-NRSPieChart_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NRSPieChart_Tests-umbrella.h"; sourceTree = "<group>"; };
+		CB990B55F0FF5DD877A84771F759790F /* NRSPieChartViewSliceIndex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NRSPieChartViewSliceIndex.swift; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D5D22241F1AFCB2B761D964D39165E5F /* Pods_NRSPieChart_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NRSPieChart_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D22241F1AFCB2B761D964D39165E5F /* Pods_NRSPieChart_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NRSPieChart_Example.framework; path = "Pods-NRSPieChart_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBA3DBCFBD8CE284954FA51DFE0F5FB /* Pods-NRSPieChart_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NRSPieChart_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DF935C6EA355CDD5A7F9E7D2887F02EB /* Pods_NRSPieChart_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NRSPieChart_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF935C6EA355CDD5A7F9E7D2887F02EB /* Pods_NRSPieChart_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NRSPieChart_Tests.framework; path = "Pods-NRSPieChart_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E076235CBB545C34CA6C8BB2D4E36512 /* Pods-NRSPieChart_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NRSPieChart_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E55BB5BFF4A81A8DEDB78AAF4C1D41AD /* NRSPieChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NRSPieChart.modulemap; sourceTree = "<group>"; };
+		E55BB5BFF4A81A8DEDB78AAF4C1D41AD /* NRSPieChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NRSPieChart.modulemap; sourceTree = "<group>"; };
 		EE8E28845ADFCC1B8BAD41C41A020B98 /* NRSPieChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NRSPieChart-umbrella.h"; sourceTree = "<group>"; };
 		F1348941BFE0F03F0D3F104290073B59 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF2DB5F97B2B1BC48F2B615FD9BEEA2A /* NRSPieChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NRSPieChart-dummy.m"; sourceTree = "<group>"; };
@@ -81,11 +85,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5F9851B198D0240E76046AAA87735DF /* Frameworks */ = {
+		9723EC75881D45DB1FD86D16D94AB298 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C506CC46BD9290F14FBBADE408E16CB /* Foundation.framework in Frameworks */,
+				D6E98B48AE3C78C7E193146B26946D5D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +107,7 @@
 		37A0F9F56E001EC727DCF4F6424922AD /* NRSPieChart */ = {
 			isa = PBXGroup;
 			children = (
-				A675E4EF4A8707555BD3B7899B546437 /* NRSPieChart */,
+				75F85B75E8471653A290366B20E2A9D8 /* NRSPieChart */,
 				4AC8E0EB958E79B4452519094A5CF316 /* Support Files */,
 			);
 			name = NRSPieChart;
@@ -169,6 +173,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		75F85B75E8471653A290366B20E2A9D8 /* NRSPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				F531AE29A7DD4E1E3B6E7A7C92D9FEFE /* Classes */,
+			);
+			name = NRSPieChart;
+			path = NRSPieChart;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -198,28 +211,23 @@
 			path = "Target Support Files/Pods-NRSPieChart_Example";
 			sourceTree = "<group>";
 		};
-		9FC507C1155E320AA0B030BC40A37509 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				4CDCD6B987DC2105FC1836BD10EC8C04 /* ReplaceMe.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		A675E4EF4A8707555BD3B7899B546437 /* NRSPieChart */ = {
-			isa = PBXGroup;
-			children = (
-				9FC507C1155E320AA0B030BC40A37509 /* Classes */,
-			);
-			path = NRSPieChart;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F531AE29A7DD4E1E3B6E7A7C92D9FEFE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AAB8FF7550A889459ECA1779415DDB3C /* NRSPieChartView.swift */,
+				404BF6E9FDD49ADD2CE46C1189FD92CA /* NRSPieChartViewEndPoints.swift */,
+				CB990B55F0FF5DD877A84771F759790F /* NRSPieChartViewSliceIndex.swift */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,11 +241,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		39F3780892F785F51335103C61C14697 /* Headers */ = {
+		3AD206C41A0D1B8E0A7F304CD6A597F1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2421BF91EAB2E52410C28EDBB4835C6C /* NRSPieChart-umbrella.h in Headers */,
+				0626446D07D8115C0A1B19A347CB604D /* NRSPieChart-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,23 +260,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2AD409103D0DF62DA51129F11FD813FA /* NRSPieChart */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE4AD0F65036D8CA4C95CC1DC6E4281F /* Build configuration list for PBXNativeTarget "NRSPieChart" */;
-			buildPhases = (
-				0B39FF4B5D8E4E14C5156042359A9C5B /* Sources */,
-				E5F9851B198D0240E76046AAA87735DF /* Frameworks */,
-				39F3780892F785F51335103C61C14697 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NRSPieChart;
-			productName = NRSPieChart;
-			productReference = 4F2721C67112F752E86DB2B9716686ED /* NRSPieChart.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		9CD89CD12CEA06DFE25F1E868C7AE56C /* Pods-NRSPieChart_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFF7D9CB2995CEBB5D400654B9F19EBB /* Build configuration list for PBXNativeTarget "Pods-NRSPieChart_Tests" */;
@@ -304,6 +295,23 @@
 			productReference = D5D22241F1AFCB2B761D964D39165E5F /* Pods_NRSPieChart_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C3780327669DAF7C856597F486FF2A6E /* NRSPieChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2C1F79D226DDBCBA12650C1CF2257F3 /* Build configuration list for PBXNativeTarget "NRSPieChart" */;
+			buildPhases = (
+				F8FE258A7C7698086B6F8C2F516B992D /* Sources */,
+				9723EC75881D45DB1FD86D16D94AB298 /* Frameworks */,
+				3AD206C41A0D1B8E0A7F304CD6A597F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NRSPieChart;
+			productName = NRSPieChart;
+			productReference = 4F2721C67112F752E86DB2B9716686ED /* NRSPieChart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -312,14 +320,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					2AD409103D0DF62DA51129F11FD813FA = {
-						LastSwiftMigration = 0820;
-					};
-					A434DC579FBE395CAA628A67A68BA47D = {
-						LastSwiftMigration = 0820;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -333,7 +333,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AD409103D0DF62DA51129F11FD813FA /* NRSPieChart */,
+				C3780327669DAF7C856597F486FF2A6E /* NRSPieChart */,
 				A434DC579FBE395CAA628A67A68BA47D /* Pods-NRSPieChart_Example */,
 				9CD89CD12CEA06DFE25F1E868C7AE56C /* Pods-NRSPieChart_Tests */,
 			);
@@ -341,15 +341,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B39FF4B5D8E4E14C5156042359A9C5B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEF67A2D421C96BA9F893723934E7C49 /* NRSPieChart-dummy.m in Sources */,
-				0B9A17FC21EB1F4592F62B72130D53DD /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0DC4768C6F69A2615008C11471161EE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,13 +357,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8FE258A7C7698086B6F8C2F516B992D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C994F48F026CD92B32D28A822C858C /* NRSPieChart-dummy.m in Sources */,
+				1DC4C554D5D7B3B3EAD1F80D21A15783 /* NRSPieChartView.swift in Sources */,
+				28ED10D94D83CA9C1E579708E8F25060 /* NRSPieChartViewEndPoints.swift in Sources */,
+				02C5B578817F88000C6EE1AAB4B1C094 /* NRSPieChartViewSliceIndex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		8D7A00B4FD2C9BD5B7E5C8339C40DD34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NRSPieChart;
-			target = 2AD409103D0DF62DA51129F11FD813FA /* NRSPieChart */;
+			target = C3780327669DAF7C856597F486FF2A6E /* NRSPieChart */;
 			targetProxy = 33DE261CD0EAA9F24B40871E01036B41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -408,7 +410,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -444,45 +445,11 @@
 				PRODUCT_NAME = Pods_NRSPieChart_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		5A3216C437BCAF07C242152D5EBB954A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 140FA2857A058885AD836A6C59490486 /* NRSPieChart.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NRSPieChart/NRSPieChart-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NRSPieChart/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NRSPieChart/NRSPieChart.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = NRSPieChart;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		5C18AC058EFFD565D957293A96D35845 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -638,7 +605,7 @@
 			};
 			name = Release;
 		};
-		FD079BBF798D4B1C1333861B813389C3 /* Release */ = {
+		DCB84B37440210AD9481DFF9566D5C96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 140FA2857A058885AD836A6C59490486 /* NRSPieChart.xcconfig */;
 			buildSettings = {
@@ -670,6 +637,39 @@
 			};
 			name = Release;
 		};
+		EEA6068660D5F67E642133E56A67E3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140FA2857A058885AD836A6C59490486 /* NRSPieChart.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NRSPieChart/NRSPieChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NRSPieChart/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NRSPieChart/NRSPieChart.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NRSPieChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -691,11 +691,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE4AD0F65036D8CA4C95CC1DC6E4281F /* Build configuration list for PBXNativeTarget "NRSPieChart" */ = {
+		A2C1F79D226DDBCBA12650C1CF2257F3 /* Build configuration list for PBXNativeTarget "NRSPieChart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A3216C437BCAF07C242152D5EBB954A /* Debug */,
-				FD079BBF798D4B1C1333861B813389C3 /* Release */,
+				EEA6068660D5F67E642133E56A67E3A4 /* Debug */,
+				DCB84B37440210AD9481DFF9566D5C96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
