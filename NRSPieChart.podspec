@@ -1,25 +1,11 @@
-#
-# Be sure to run `pod lib lint NRSPieChart.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'NRSPieChart'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NRSPieChart.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A PieChart control that supports slice animations, and interactions.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+NRSPieChart is a UIView subclass that presents a customizable PieChart graph. The class will render smooth animations of PieChart slices and colors when the data model changes and the PieChart is refreshed. The data model and delegate have similar semantics to that of a UITableView or UICollectionView. NRSPieChart attributes are IBInspectable, so they can easily be configured directly in Interface Builder.
+DESC
 
   s.homepage         = 'https://github.com/neils4fun/NRSPieChart'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

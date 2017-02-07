@@ -1,0 +1,6 @@
+framework module NRSPieChart {
+  umbrella header "NRSPieChart-umbrella.h"
+
+  export *
+  module * { export * }
+}

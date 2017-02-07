@@ -1,0 +1,22 @@
+{
+  "name": "NRSPieChart",
+  "version": "0.1.0",
+  "summary": "A short description of NRSPieChart.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/neils4fun/NRSPieChart",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "neils4fun": "macneil@neils4fun.com"
+  },
+  "source": {
+    "git": "https://github.com/neils4fun/NRSPieChart.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NRSPieChart/Classes/**/*"
+}
