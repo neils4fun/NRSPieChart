@@ -22,7 +22,7 @@ pod "NRSPieChart"
 
 ## Author
 
-Neil Schreiber , macneil@neils4fun.com
+Neil Schreiber, macneil@neils4fun.com
 
 ## License
 
