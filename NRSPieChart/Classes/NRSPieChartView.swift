@@ -42,7 +42,7 @@ import UIKit
     
 }
 
-@IBDesignable // IB_DESIGNABLE
+@objcMembers @IBDesignable // IB_DESIGNABLE
 public class NRSPieChartView: UIView {
     #if !TARGET_INTERFACE_BUILDER
     weak public var dataSource: NRSPieChartViewDataSourceProtocol?
@@ -140,9 +140,9 @@ public class NRSPieChartView: UIView {
         let totalInset: CGFloat = bInset + bLineWidth/2.0
         let rect = bounds.insetBy(dx: totalInset, dy: totalInset)
         let center = CGPoint(x: bounds.width/2.0, y: bounds.height/2.0)
-        let twoPi = 2.0 * Double(M_PI)
-        let startAngle = -Double(M_PI_2) //Double(fractionOfCircle) * Double(twoPi) - Double(M_PI_2)
-        let endAngle = twoPi - Double(M_PI_2)
+        let twoPi = 2.0 * Double.pi
+        let startAngle = -Double.pi/2 //Double(fractionOfCircle) * Double(twoPi) - Double(M_PI_2)
+        let endAngle = twoPi - Double.pi/2
         let clockwise: Bool = true
         let path = UIBezierPath(arcCenter: center, radius: rect.height/2.0, startAngle: CGFloat(startAngle), endAngle: CGFloat(endAngle), clockwise: clockwise)
         
@@ -289,9 +289,9 @@ public class NRSPieChartView: UIView {
                 let innerRect = bounds.insetBy(dx: totalInset, dy: totalInset)
                 
                 let center = CGPoint(x: bounds.width/2.0, y: bounds.height/2.0)
-                let twoPi = 2.0 * Double(M_PI)
-                let startAngle = -Double(M_PI_2) //Double(fractionOfCircle) * Double(twoPi) - Double(M_PI_2)
-                let endAngle = twoPi - Double(M_PI_2)
+                let twoPi = 2.0 * Double.pi
+                let startAngle = -Double.pi/2 //Double(fractionOfCircle) * Double(twoPi) - Double(M_PI_2)
+                let endAngle = twoPi - Double.pi/2
                 let clockwise: Bool = true
                 let innerPath = UIBezierPath(arcCenter: center, radius: innerRect.height/2.0, startAngle: CGFloat(startAngle), endAngle: CGFloat(endAngle), clockwise: clockwise)
                 
@@ -371,8 +371,8 @@ public class NRSPieChartView: UIView {
         let sliceStrokeMid = segmentAtStart.strokeStart + (segmentAtEnd.strokeEnd - segmentAtStart.strokeStart)/2.0
         
         // Convert stroke terms to angle terms. NOTE: rotate left by 90 degrees to account for 0 degrees defined as vertical/up
-        let twoPi = 2.0 * Double(M_PI)
-        let midAngle = Double(sliceStrokeMid) * twoPi - M_PI_2;
+        let twoPi = 2.0 * Double.pi
+        let midAngle = Double(sliceStrokeMid) * twoPi - Double.pi/2;
         
         // Compute the x,y coordinate (in view coordinates) from the radial coordinate
         let x = bounds.origin.x + bounds.size.width/2.0 + (frame.height/2 - sInset - sLineWidth/2.0) * CGFloat(cos(midAngle))
@@ -466,7 +466,7 @@ extension NRSPieChartView {
 // MARK: - Gesture Recognizer Handling
 
 extension NRSPieChartView {
-    func pieChartTapped(_ sender:UITapGestureRecognizer) {
+    @objc func pieChartTapped(_ sender:UITapGestureRecognizer) {
         let touchPoint = sender.location(in: self)
         let center = CGPoint(x: bounds.width/2.0, y: bounds.height/2.0)
         
@@ -475,7 +475,7 @@ extension NRSPieChartView {
         let deltaX = (center.y - touchPoint.y)
         let deltaY = (center.x - touchPoint.x)
         let thetaRadians = atan2(Double(deltaY),Double(deltaX))
-        let thetaDegrees = thetaRadians * 180/M_PI
+        let thetaDegrees = thetaRadians * 180/Double.pi
         let theta360Degrees = 360.0 - (thetaDegrees > 0.0 ? thetaDegrees : (360.0 + thetaDegrees))
         let theta360Percent = theta360Degrees / 360.0
         

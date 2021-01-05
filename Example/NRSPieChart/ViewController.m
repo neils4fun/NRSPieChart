@@ -119,7 +119,7 @@
     NSUInteger percentRemaining = 100;
     
     for (NSUInteger i = 0; i < self.numberOfMajorSlices - 1; i++) {
-        NSUInteger sliceSize = (NSUInteger)arc4random_uniform(MIN(25,percentRemaining));
+        NSUInteger sliceSize = (NSUInteger)arc4random_uniform(MIN(25,(uint)percentRemaining));
         
         pieSegmentEnd = pieSegmentStart + sliceSize;
         

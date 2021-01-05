@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@objc public class NRSPieChartViewEndPoints: NSObject {
+@objcMembers public class NRSPieChartViewEndPoints: NSObject {
     public var start: CGFloat
     public var end: CGFloat
     

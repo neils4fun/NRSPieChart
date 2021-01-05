@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NRSPieChart'
-  s.version          = '0.1.1'
+  s.version          = '0.2.0'
   s.summary          = 'A PieChart control that supports slice animations, and interactions.'
 
   s.description      = <<-DESC
@@ -15,15 +15,8 @@ DESC
   s.source = { :git => "https://github.com/neils4fun/NRSPieChart.git", :tag => "0.1.1" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'NRSPieChart/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'NRSPieChart' => ['NRSPieChart/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

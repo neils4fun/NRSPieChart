@@ -1,5 +1,5 @@
 use_frameworks!
-
+platform :ios, '11.0'
 target 'NRSPieChart_Example' do
   pod 'NRSPieChart', :path => '../'
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public class NRSPieChartViewSliceIndex: NSObject {
+@objcMembers public class NRSPieChartViewSliceIndex: NSObject {
     public var major: UInt
     public var minor: UInt
     
